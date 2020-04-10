@@ -1,0 +1,14 @@
+$editor ReqValid.l
+$ editor ReqValid.y
+$ lex ReqValid.l
+$ yacc -d ReqValid.y
+$ cc lex.yy.c y.tab.c -lfl
+$ ./a.out
+Enter the variable:
+class
+
+valid variable
+$ ./a.out
+Enter the variable:
+4class
+Invalid varible!!
